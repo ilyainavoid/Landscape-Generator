@@ -15,10 +15,10 @@ namespace LandscapeLibrary
                     toReturn = null;
                     break;
                 case CreateMapType.HILLS_AND_HOLES:
-                    toReturn = null;
+                    toReturn = new HillsAndHoles();
                     break;
                 case CreateMapType.SMOOTHING:
-                    toReturn = null;
+                    toReturn = new Smoothing();
                     break;
                 case CreateMapType.ISLAND:
                     toReturn = new Island();

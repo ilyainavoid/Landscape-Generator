@@ -7,13 +7,7 @@ namespace LandscapeApplication
     {
         static void Main(string[] args)
         {
-            FabricaCreateMap factory = new FabricaCreateMap();
-            Map mapHeight = new Map(100);
-
-            CreateMap island = factory.getCreateMap(CreateMapType.ISLAND);
-
-            island.createMapHeight(mapHeight.getMap(), mapHeight.getSize());
-
+            Map mapHeight = new Map(200, CreateMapType.ISLAND);
             mapHeight.drawMap();
             //Console.WriteLine("Hello World!");
         }
