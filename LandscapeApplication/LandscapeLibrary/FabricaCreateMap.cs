@@ -24,7 +24,7 @@ namespace LandscapeLibrary
                     toReturn = new Island();
                     break;
                 case CreateMapType.CHESS_CREATION:
-                    toReturn = null;
+                    toReturn = new Chess();
                     break;
             }
             return toReturn;
