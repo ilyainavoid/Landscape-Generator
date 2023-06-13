@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\WinFormsApp1\\WinFormsApp1.csproj",
-      "projectName": "WinFormsApp1",
-      "projectPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\WinFormsApp1\\LandscapeApplicationUI.csproj",
+      "projectName": "LandscapeApplicationUI",
+      "projectPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\WinFormsApp1\\LandscapeApplicationUI.csproj",
       "packagesPath": "C:\\Users\\third\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
