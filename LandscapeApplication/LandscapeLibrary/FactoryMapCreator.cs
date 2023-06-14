@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,8 +11,8 @@ namespace LandscapeLibrary
             IMapCreator toReturn = null;
             switch (type)
             {
-                case MapCreatorType.DIAGONAL_CREATION:
-                    toReturn = null;
+                case CreateMapType.DIAGONAL_CREATION:
+                    toReturn = new Diagonal();
                     break;
                 case MapCreatorType.HILLS_AND_HOLES:
                     toReturn = new HillsAndHoles();
