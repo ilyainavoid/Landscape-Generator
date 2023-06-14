@@ -6,6 +6,10 @@ namespace LandscapeLibrary
 {
     abstract class Plant : Entity
     {
-        public abstract override void moveEntity();
+        public int counterWater = 10;
+        public override void moveEntity(List<Cell> neighbours)
+        {
+
+        }
     }
 }

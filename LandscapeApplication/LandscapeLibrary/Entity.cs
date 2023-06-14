@@ -6,6 +6,6 @@ namespace LandscapeLibrary
 {
     abstract class Entity
     {
-        public abstract void moveEntity();
+        public abstract void moveEntity(List<Cell> neighbours);
     }
 }

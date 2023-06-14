@@ -25,7 +25,7 @@ namespace LandscapeLibrary
                 }
             }
 
-            matrixHeight[i, j].setHeight(sumDouble / sumInt);
+            matrixHeight[i, j] = new Cell(sumDouble / sumInt);
         }
 
         public void createMapHeight(Cell[,] matrixHeight) 

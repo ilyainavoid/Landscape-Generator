@@ -16,11 +16,11 @@ namespace LandscapeLibrary
                     int currentCol = j * blockSize + c;
                     if ((i + j) % 2 == 0)
                     {
-                        matrixHeight[currentRow, currentCol].setHeight(0.2 + y.NextDouble() * 0.8);
+                        matrixHeight[currentRow, currentCol] = new Cell(0.2 + y.NextDouble() * 0.8);
                     }
                     else
                     {
-                        matrixHeight[currentRow, currentCol].setHeight(y.NextDouble() * 0.2);
+                        matrixHeight[currentRow, currentCol] = new Cell(y.NextDouble() * 0.2);
                     }
                 }
             }

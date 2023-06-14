@@ -6,7 +6,7 @@ namespace LandscapeLibrary
 {
     class FactoryEntity
     {
-        public static Entity getEntity(EntityType type)
+        public static Entity getEntity(EntityType type, PlantType plantType)
         {
             Entity toReturn = null;
             switch (type)
@@ -21,7 +21,7 @@ namespace LandscapeLibrary
                     toReturn = new WaterSource();
                     break;
                 case EntityType.PLANT:
-                    toReturn = new Plant();
+                    toReturn = FactoryPlant.getPlant(plantType);
                     break;
             }
             return toReturn;

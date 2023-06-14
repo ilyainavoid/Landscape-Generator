@@ -6,7 +6,7 @@ namespace LandscapeLibrary
 {
     class BlockFabricaType
     {
-        public BlockType getBlockType(BlockCreateType type)
+        public static BlockType getBlockType(BlockCreateType type)
         {
             BlockType toReturn = null;
             switch (type)
