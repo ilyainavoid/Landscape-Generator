@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,7 +12,7 @@ namespace LandscapeLibrary
             switch (type)
             {
                 case CreateMapType.DIAGONAL_CREATION:
-                    toReturn = null;
+                    toReturn = new Diagonal();
                     break;
                 case CreateMapType.HILLS_AND_HOLES:
                     toReturn = new HillsAndHoles();
