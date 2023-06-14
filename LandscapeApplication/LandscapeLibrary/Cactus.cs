@@ -6,11 +6,5 @@ namespace LandscapeLibrary
 {
     class Cactus : Plant 
     {
-        public int counterWater = 10;
-
-        public override void moveEntity()
-        {
-
-        }
     }
 }

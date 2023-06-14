@@ -27,30 +27,29 @@ namespace LandscapeLibrary
         public void createMapHeight(Cell[,] matrixHeight)
         {
             this.plain = new double[matrixHeight.GetLength(0), matrixHeight.GetLength(0)];
-            Random rnd = new Random();
 
             for (int i = 0; i < matrixHeight.GetLength(0); i++)
             {
                 for (int j = 0; j < matrixHeight.GetLength(0); j++)
                 {
-                    this.plain[i, j] = 0.4 + rnd.NextDouble() * 0.1;
+                    this.plain[i, j] = 0.4 + LocalRandom.random.NextDouble() * 0.1;
                 }
             }
 
-            for (int i = 0; i < rnd.Next(matrixHeight.GetLength(0)); i++)
+            for (int i = 0; i < LocalRandom.random.Next(matrixHeight.GetLength(0)); i++)
             {
-                this.makeHillOrHole(rnd.Next(matrixHeight.GetLength(0)), rnd.Next(matrixHeight.GetLength(0)), rnd.NextDouble() * 0.5, rnd.Next(14, 28));
+                this.makeHillOrHole(LocalRandom.random.Next(matrixHeight.GetLength(0)), LocalRandom.random.Next(matrixHeight.GetLength(0)), LocalRandom.random.NextDouble() * 0.5, LocalRandom.random.Next(14, 28));
             }
-            for (int i = 0; i < rnd.Next(matrixHeight.GetLength(0)); i++)
+            for (int i = 0; i < LocalRandom.random.Next(matrixHeight.GetLength(0)); i++)
             {
-                this.makeHillOrHole(rnd.Next(matrixHeight.GetLength(0)), rnd.Next(matrixHeight.GetLength(0)), rnd.NextDouble() * -0.5, rnd.Next(7, 11));
+                this.makeHillOrHole(LocalRandom.random.Next(matrixHeight.GetLength(0)), LocalRandom.random.Next(matrixHeight.GetLength(0)), LocalRandom.random.NextDouble() * -0.5, LocalRandom.random.Next(7, 11));
             }
 
             for (int i = 0; i < matrixHeight.GetLength(0); i++)
             {
                 for (int j = 0; j < matrixHeight.GetLength(0); j++)
                 {
-                    matrixHeight[i, j].setHeight(this.plain[i, j]);
+                    matrixHeight[i, j] = new Cell(this.plain[i, j]);
                 }
             }
         }

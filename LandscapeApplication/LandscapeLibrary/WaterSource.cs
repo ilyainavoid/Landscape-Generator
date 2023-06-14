@@ -8,7 +8,7 @@ namespace LandscapeLibrary
     {
         public int counterWater = 10;
 
-        public override void moveEntity()
+        public override void moveEntity(List<Cell> neighbours)
         {
             
         }

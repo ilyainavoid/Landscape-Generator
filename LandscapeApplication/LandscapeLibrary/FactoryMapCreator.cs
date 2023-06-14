@@ -4,14 +4,14 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public class FactoryMapCreator
+    class FactoryMapCreator
     {
         public static IMapCreator getMapCreator(MapCreatorType type)
         {
             IMapCreator toReturn = null;
             switch (type)
             {
-                case CreateMapType.DIAGONAL_CREATION:
+                case MapCreatorType.DIAGONAL_CREATION:
                     toReturn = new Diagonal();
                     break;
                 case MapCreatorType.HILLS_AND_HOLES:

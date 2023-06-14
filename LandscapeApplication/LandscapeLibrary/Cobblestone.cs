@@ -6,7 +6,7 @@ namespace LandscapeLibrary
 {
     class Cobblestone : Entity
     {
-        public override void moveEntity()
+        public override void moveEntity(List<Cell> neighbours)
         {
 
         }

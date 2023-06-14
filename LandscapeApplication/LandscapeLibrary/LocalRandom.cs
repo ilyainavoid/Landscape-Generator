@@ -4,7 +4,8 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Acacia : Plant 
+    static public class LocalRandom
     {
+        static public Random random = new Random();
     }
 }

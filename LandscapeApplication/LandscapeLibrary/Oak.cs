@@ -6,11 +6,5 @@ namespace LandscapeLibrary
 {
     class Oak : Plant
     {
-        public int counterWater = 10;
-
-        public override void moveEntity()
-        {
-
-        }
     }
 }

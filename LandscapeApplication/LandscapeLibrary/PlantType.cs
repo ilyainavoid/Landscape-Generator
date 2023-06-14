@@ -4,7 +4,12 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Acacia : Plant 
+    public enum PlantType
     {
+        OAK,
+        JUNGLE_TREE,
+        CACTUS,
+        ACACIA,
+        SPRUCE
     }
 }
