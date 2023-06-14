@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    abstract class Entity
+    public abstract class Entity
     {
         public abstract void moveEntity(List<Cell> neighbours);
     }

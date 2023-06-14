@@ -39,8 +39,9 @@ namespace LandscapeLibrary
                     {
                         neighbours.Add(matrixHeight[i, j + 1]);
                     }
+                    neighbours.Add(matrixHeight[i, j]);
 
-                    matrixHeight[i, j].getNeighboursCell(neighbours);
+                    matrixHeight[i, j].setNeighboursCell(neighbours);
                 }
             }
         }

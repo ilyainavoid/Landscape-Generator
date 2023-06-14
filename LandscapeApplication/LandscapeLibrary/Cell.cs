@@ -10,6 +10,7 @@ namespace LandscapeLibrary
         private List<Cell> neighbours;
         private Entity entity;
         private BlockType blockType;
+        private int counterEntity = 10;
 
         public Cell(double height)
         {
@@ -84,7 +85,32 @@ namespace LandscapeLibrary
             return this.height;
         }
 
-        public void getNeighboursCell(List<Cell> neighbours) 
+        public BlockType getBlock()
+        {
+            return this.blockType;
+        }
+
+        public Entity getEntityType()
+        {
+            return this.entity;
+        }
+
+        public void setEntityType(Entity entity)
+        {
+            this.entity = entity;
+        }
+
+        public int getCounterEntity()
+        {
+            return this.counterEntity;
+        }
+
+        public void setCounterEntity(int counterEntity)
+        {
+            this.counterEntity = counterEntity;
+        }
+
+        public void setNeighboursCell(List<Cell> neighbours) 
         {
             this.neighbours = neighbours;
         }
