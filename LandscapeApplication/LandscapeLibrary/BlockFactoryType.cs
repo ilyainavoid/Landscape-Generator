@@ -4,9 +4,9 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class BlockFabricaType
+    class BlockFactoryType
     {
-        public BlockType getBlockType(BlockCreateType type)
+        static public BlockType getBlockType(BlockCreateType type)
         {
             BlockType toReturn = null;
             switch (type)
