@@ -4,26 +4,26 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public class FabricaCreateMap
+    public class FactoryMapCreator
     {
-        public CreateMap getCreateMap(CreateMapType type)
+        public static IMapCreator getMapCreator(MapCreatorType type)
         {
-            CreateMap toReturn = null;
+            IMapCreator toReturn = null;
             switch (type)
             {
-                case CreateMapType.DIAGONAL_CREATION:
+                case MapCreatorType.DIAGONAL_CREATION:
                     toReturn = null;
                     break;
-                case CreateMapType.HILLS_AND_HOLES:
+                case MapCreatorType.HILLS_AND_HOLES:
                     toReturn = new HillsAndHoles();
                     break;
-                case CreateMapType.SMOOTHING:
+                case MapCreatorType.SMOOTHING:
                     toReturn = new Smoothing();
                     break;
-                case CreateMapType.ISLAND:
+                case MapCreatorType.ISLAND:
                     toReturn = new Island();
                     break;
-                case CreateMapType.CHESS_CREATION:
+                case MapCreatorType.CHESS_CREATION:
                     toReturn = new Chess();
                     break;
             }

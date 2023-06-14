@@ -4,8 +4,8 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public interface CreateMap
+    abstract class Plant : Entity
     {
-        void createMapHeight(Cell[,] matrixHeight) { }
+        public abstract override void moveEntity();
     }
 }

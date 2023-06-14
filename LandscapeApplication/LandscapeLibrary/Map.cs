@@ -8,9 +8,9 @@ namespace LandscapeLibrary
     {
         private int size;
         private Cell[,] matrixHeight;
-        private CreateMap createMap;
+        private IMapCreator createMap;
 
-        public Map(int size, CreateMapType type)
+        public Map(int size, MapCreatorType type)
         {
             this.size = size;
             this.matrixHeight = new Cell[size, size];
@@ -23,9 +23,9 @@ namespace LandscapeLibrary
                 }
             }
 
-            FabricaCreateMap factory = new FabricaCreateMap();
-            this.createMap = factory.getCreateMap(type);
+            this.createMap = FactoryMapCreator.getMapCreator(type);
             createMap.createMapHeight(this.matrixHeight);
+
         }
 
         public Cell[,] getMap()

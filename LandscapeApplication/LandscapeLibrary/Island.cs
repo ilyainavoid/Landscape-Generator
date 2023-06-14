@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-     public class Island : CreateMap
+     public class Island : IMapCreator
     {
         public void createMapHeight(Cell[,] matrixHeight)
         {

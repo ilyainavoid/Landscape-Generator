@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class HillsAndHoles : CreateMap
+    class HillsAndHoles : IMapCreator
     {
         private double[,] plain;
 

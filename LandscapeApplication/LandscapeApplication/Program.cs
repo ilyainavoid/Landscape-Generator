@@ -7,7 +7,7 @@ namespace LandscapeApplication
     {
         static void Main(string[] args)
         {
-            Map mapHeight = new Map(100, CreateMapType.CHESS_CREATION);
+            Map mapHeight = new Map(200, MapCreatorType.CHESS_CREATION);
             mapHeight.drawMap();
             //Console.WriteLine("Hello World!");
         }
