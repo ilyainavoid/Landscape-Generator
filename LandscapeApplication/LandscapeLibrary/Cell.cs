@@ -10,7 +10,7 @@ namespace LandscapeLibrary
         private List<Cell> neighbours;
         private Entity entity;
         private BlockType blockType;
-        private int counterEntity = 10;
+        private int counterEntity = 9;
 
         public Cell(double height)
         {
@@ -21,20 +21,19 @@ namespace LandscapeLibrary
         private void CreateBlockTypeAndEntity()
         {
             Random rnd = new Random();
-            if (this.height < 0.3)
+            if (this.height < 0.2)
+            {
+                this.blockType = BlockFabricaType.getBlockType(BlockCreateType.WATER);
+                this.entity = FactoryEntity.getEntity(EntityType.WATER_SOURCE, PlantType.CACTUS);
+                this.entity.AgeEntity = true;
+            }
+            else if (this.height < 0.3)
             {
                 this.blockType = BlockFabricaType.getBlockType(BlockCreateType.BEACH);
 
-                if (this.height < 0.2)
+                if (rnd.NextDouble() > 0.83)
                 {
-                    this.entity = FactoryEntity.getEntity(EntityType.WATER_SOURCE, PlantType.CACTUS);
-                }
-                else
-                {
-                    if(rnd.NextDouble() > 0.83)
-                    {
-                        this.entity = FactoryEntity.getEntity(EntityType.PLANT, PlantType.CACTUS);
-                    }
+                    this.entity = FactoryEntity.getEntity(EntityType.PLANT, PlantType.CACTUS);
                 }
             }
             else if(this.height < 0.5)
@@ -100,7 +99,7 @@ namespace LandscapeLibrary
             this.entity = entity;
         }
 
-        public int getCounterEntity()
+        /*public int getCounterEntity()
         {
             return this.counterEntity;
         }
@@ -108,6 +107,11 @@ namespace LandscapeLibrary
         public void setCounterEntity(int counterEntity)
         {
             this.counterEntity = counterEntity;
+        }*/
+
+        public List<Cell> getNeighboursCell()
+        {
+            return this.neighbours;
         }
 
         public void setNeighboursCell(List<Cell> neighbours) 

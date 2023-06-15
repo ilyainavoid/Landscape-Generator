@@ -26,6 +26,9 @@ namespace LandscapeLibrary
                 case BlockCreateType.FOREST:
                     toReturn = new Forest();
                     break;
+                case BlockCreateType.WATER:
+                    toReturn = new WaterBlock();
+                    break;
             }
             return toReturn;
         }

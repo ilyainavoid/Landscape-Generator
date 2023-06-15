@@ -6,7 +6,11 @@ namespace LandscapeLibrary
 {
     abstract class Plant : Entity
     {
-        public int counterWater = 10;
+        bool ageEntity = true;
+        int plantCounter;
+        public override bool AgeEntity { get => ageEntity; set => ageEntity = value; }
+        public override int CounterEntity { get => plantCounter; set => plantCounter = value; }
+
         public override void moveEntity(List<Cell> neighbours)
         {
 

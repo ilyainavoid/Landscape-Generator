@@ -7,7 +7,7 @@ namespace LandscapeApplication
     {
         static void Main(string[] args)
         {
-            Map mapHeight = new Map(200, MapCreatorType.SMOOTHING);
+            Map mapHeight = new Map(25, MapCreatorType.ISLAND);
             mapHeight.drawMap();
             //Console.WriteLine("Hello World!");
         }

@@ -6,7 +6,10 @@ namespace LandscapeLibrary
 {
     class Fire : Entity
     {
-        public int counterWater = 10;
+        bool ageEntity = true;
+        int fireCounter;
+        public override bool AgeEntity { get => ageEntity; set => ageEntity = value; }
+        public override int CounterEntity { get => fireCounter; set => fireCounter = value; }
 
         public override void moveEntity(List<Cell> neighbours)
         {
