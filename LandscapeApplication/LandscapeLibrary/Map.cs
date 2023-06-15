@@ -8,24 +8,24 @@ namespace LandscapeLibrary
     {
         private int size;
         private Cell[,] matrixHeight;
+        private CreateMap createMap;
 
-        public Map(int size)
+        public Map(int size, CreateMapType type)
         {
             this.size = size;
             this.matrixHeight = new Cell[size, size];
+
             for (int i = 0; i < this.size; i++)
             {
                 for (int j = 0; j < this.size; j++)
                 {
-                    Cell cell = new Cell();
-                    this.matrixHeight[i, j] = cell;
+                    this.matrixHeight[i, j] = new Cell();
                 }
             }
-        }
 
-        public int getSize()
-        {
-            return this.size;
+            FabricaCreateMap factory = new FabricaCreateMap();
+            this.createMap = factory.getCreateMap(type);
+            createMap.createMapHeight(this.matrixHeight);
         }
 
         public Cell[,] getMap()
@@ -39,7 +39,19 @@ namespace LandscapeLibrary
             {
                 for (int j = 0; j < this.size; j++)
                 {
-                    Console.Write(matrixHeight[i, j].getHeight() + " ");
+                    //Console.Write(matrixHeight[i, j].getHeight() + " ");
+                    if (matrixHeight[i, j].getHeight() < 0.2)
+                    {
+                        Console.Write(0);
+                    }
+                    else if (matrixHeight[i, j].getHeight() > 0.9)
+                    {
+                        Console.Write(2);
+                    }
+                    else
+                    {
+                        Console.Write(1);
+                    }
                 }
                 Console.WriteLine();
             }

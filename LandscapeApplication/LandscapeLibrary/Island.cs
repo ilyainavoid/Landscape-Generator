@@ -6,15 +6,15 @@ namespace LandscapeLibrary
 {
      public class Island : CreateMap
     {
-        public void createMapHeight(Cell[,] matrixHeight, int size)
+        public void createMapHeight(Cell[,] matrixHeight)
         {
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < matrixHeight.GetLength(0); i++)
             {
-                for (int j = 0; j < size; j++)
+                for (int j = 0; j < matrixHeight.GetLength(0); j++)
                 {
-                    double distance = Math.Sqrt(Math.Pow(size / 2 - i, 2) + Math.Pow(size / 2 - j, 2));
+                    double distance = Math.Sqrt(Math.Pow(matrixHeight.GetLength(0) / 2 - i, 2) + Math.Pow(matrixHeight.GetLength(0) / 2 - j, 2));
 
-                    matrixHeight[i, j].setHeight(1 - distance / Math.Sqrt(Math.Pow(size / 2, 2) + Math.Pow(size / 2, 2)));
+                    matrixHeight[i, j].setHeight(1 - distance / Math.Sqrt(Math.Pow(matrixHeight.GetLength(0) / 2, 2) + Math.Pow(matrixHeight.GetLength(0) / 2, 2)));
                 }
             }
         }

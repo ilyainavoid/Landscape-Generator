@@ -6,6 +6,6 @@ namespace LandscapeLibrary
 {
     public interface CreateMap
     {
-        void createMapHeight(Cell[,] matrixHeight, int size) { }
+        void createMapHeight(Cell[,] matrixHeight) { }
     }
 }
