@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-     public class Island : CreateMap
+     public class Island : IMapCreator
     {
         public void createMapHeight(Cell[,] matrixHeight)
         {
@@ -14,7 +14,7 @@ namespace LandscapeLibrary
                 {
                     double distance = Math.Sqrt(Math.Pow(matrixHeight.GetLength(0) / 2 - i, 2) + Math.Pow(matrixHeight.GetLength(0) / 2 - j, 2));
 
-                    matrixHeight[i, j].setHeight(1 - distance / Math.Sqrt(Math.Pow(matrixHeight.GetLength(0) / 2, 2) + Math.Pow(matrixHeight.GetLength(0) / 2, 2)));
+                    matrixHeight[i, j] = new Cell(1 - distance / Math.Sqrt(Math.Pow(matrixHeight.GetLength(0) / 2, 2) + Math.Pow(matrixHeight.GetLength(0) / 2, 2)));
                 }
             }
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using LandscapeLibrary;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace LandscapeApplication
 {
@@ -7,7 +8,7 @@ namespace LandscapeApplication
     {
         static void Main(string[] args)
         {
-            Map mapHeight = new Map(100, CreateMapType.CHESS_CREATION);
+            Map mapHeight = new Map(101, MapCreatorType.ISLAND);
             mapHeight.drawMap();
             //Console.WriteLine("Hello World!");
         }

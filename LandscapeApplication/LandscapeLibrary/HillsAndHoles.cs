@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class HillsAndHoles : CreateMap
+    class HillsAndHoles : IMapCreator
     {
         private double[,] plain;
 
@@ -50,7 +50,7 @@ namespace LandscapeLibrary
             {
                 for (int j = 0; j < matrixHeight.GetLength(0); j++)
                 {
-                    matrixHeight[i, j].setHeight(this.plain[i, j]);
+                    matrixHeight[i, j] = new Cell(this.plain[i, j]);
                 }
             }
         }
