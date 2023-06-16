@@ -8,3 +8,13 @@ C:\Landscape\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\Lands
 C:\Landscape\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.csproj.CoreCompileInputs.cache
 C:\Landscape\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.dll
 C:\Landscape\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.pdb
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\bin\Debug\netcoreapp3.1\LandscapeLibrary.deps.json
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\bin\Debug\netcoreapp3.1\LandscapeLibrary.dll
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\bin\Debug\netcoreapp3.1\LandscapeLibrary.pdb
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.csproj.AssemblyReference.cache
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.AssemblyInfoInputs.cache
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.AssemblyInfo.cs
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.csproj.CoreCompileInputs.cache
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.dll
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeLibrary\obj\Debug\netcoreapp3.1\LandscapeLibrary.pdb

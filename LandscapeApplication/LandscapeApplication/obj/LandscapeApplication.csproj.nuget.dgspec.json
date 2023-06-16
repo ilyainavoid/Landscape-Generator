@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj": {}
+    "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj": {}
   },
   "projects": {
-    "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj": {
+    "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
+        "projectUniqueName": "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
         "projectName": "LandscapeApplication",
-        "projectPath": "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
-        "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
-        "outputPath": "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\obj\\",
+        "projectPath": "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
+        "packagesPath": "C:\\Users\\kfk55\\.nuget\\packages\\",
+        "outputPath": "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Юра\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kfk55\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
-                "projectPath": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj"
+              "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
+                "projectPath": "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj"
               }
             }
           }
@@ -49,30 +49,49 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.32, 3.1.32]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
+    "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
+        "projectUniqueName": "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
         "projectName": "LandscapeLibrary",
-        "projectPath": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
-        "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
-        "outputPath": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\obj\\",
+        "projectPath": "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
+        "packagesPath": "C:\\Users\\kfk55\\.nuget\\packages\\",
+        "outputPath": "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Юра\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kfk55\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,16 +122,31 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

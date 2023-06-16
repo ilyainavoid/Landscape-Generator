@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UNn1I6DVzhsOlSdAycE5DeO6lztdrb8VCT3nEGtLx05MHEZ27/YNhib8ROfZ+xcP1jUq+06wumESs7Q/9tF/sA==",
+  "dgSpecHash": "1Moz86Aa6/7TCFaOMbpKxRE4gQWIVULUqeOKViWc29GVmMCHwsTEdMHoV00lj6ZcBu0Qn7e5cjRBVACu6zekwQ==",
   "success": true,
-  "projectFilePath": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Вижуал ++\\ооп потытка 4.0\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kfk55\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\kfk55\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\kfk55\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }

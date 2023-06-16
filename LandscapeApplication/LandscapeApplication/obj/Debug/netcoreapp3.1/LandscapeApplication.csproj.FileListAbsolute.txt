@@ -15,3 +15,20 @@ C:\Landscape\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\L
 C:\Landscape\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.dll
 C:\Landscape\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.pdb
 C:\Landscape\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.genruntimeconfig.cache
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\bin\Debug\netcoreapp3.1\LandscapeApplication.exe
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\bin\Debug\netcoreapp3.1\LandscapeApplication.deps.json
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\bin\Debug\netcoreapp3.1\LandscapeApplication.runtimeconfig.json
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\bin\Debug\netcoreapp3.1\LandscapeApplication.runtimeconfig.dev.json
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\bin\Debug\netcoreapp3.1\LandscapeApplication.dll
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\bin\Debug\netcoreapp3.1\LandscapeApplication.pdb
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\bin\Debug\netcoreapp3.1\LandscapeLibrary.dll
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\bin\Debug\netcoreapp3.1\LandscapeLibrary.pdb
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.csproj.AssemblyReference.cache
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.AssemblyInfoInputs.cache
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.AssemblyInfo.cs
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.csproj.CoreCompileInputs.cache
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.csproj.CopyComplete
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.dll
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.pdb
+D:\Вижуал ++\ооп потытка 4.0\LandscapeApplication\LandscapeApplication\obj\Debug\netcoreapp3.1\LandscapeApplication.genruntimeconfig.cache
