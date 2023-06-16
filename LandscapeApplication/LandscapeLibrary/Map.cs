@@ -16,7 +16,10 @@ namespace LandscapeLibrary
             this.matrixHeight = new Cell[size, size];
             this.createMap = FactoryMapCreator.getMapCreator(type);
             createMap.createMapHeight(this.matrixHeight);
-            matrixHeight[12, 12].setEntityType(FactoryEntity.getEntity(EntityType.WATER_SOURCE, PlantType.CACTUS));
+            //matrixHeight[12, 12].setEntityType(FactoryEntity.getEntity(EntityType.WATER_SOURCE, PlantType.CACTUS));
+            matrixHeight[5, 12].setEntityType(FactoryEntity.getEntity(EntityType.FIRE, PlantType.CACTUS));
+            matrixHeight[8, 10].setEntityType(FactoryEntity.getEntity(EntityType.FIRE, PlantType.CACTUS));
+            matrixHeight[20, 15].setEntityType(FactoryEntity.getEntity(EntityType.FIRE, PlantType.CACTUS));
 
             for (int i = 0; i < size; i++)
             {
@@ -45,7 +48,7 @@ namespace LandscapeLibrary
                     matrixHeight[i, j].setNeighboursCell(neighbours);
                 }
             }
-            for (int u = 0; u < 30; u++)
+            for (int u = 0; u < 31; u++)
             {
                 for (int i = 0; i < size; i++)
                 {
@@ -79,6 +82,10 @@ namespace LandscapeLibrary
                         {
                             Console.Write(matrixHeight[i,j].getEntityType().CounterEntity);
                         }
+                        else if (matrixHeight[i, j].getEntityType() is Plant)
+                        {
+                            Console.Write("#");
+                        }
                         else
                         {
                             Console.Write(0);
@@ -91,6 +98,10 @@ namespace LandscapeLibrary
                         {
                             Console.Write(matrixHeight[i, j].getEntityType().CounterEntity);
                         }
+                        else if (matrixHeight[i, j].getEntityType() is Plant)
+                        {
+                            Console.Write("#");
+                        }
                         else
                         {
                             Console.Write(2);
@@ -102,6 +113,10 @@ namespace LandscapeLibrary
                         if (matrixHeight[i, j].getEntityType() is WaterSource)
                         {
                             Console.Write(matrixHeight[i, j].getEntityType().CounterEntity);
+                        }
+                        else if (matrixHeight[i, j].getEntityType() is Plant)
+                        {
+                            Console.Write("#");
                         }
                         else
                         {

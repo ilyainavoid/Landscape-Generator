@@ -43,12 +43,9 @@ namespace LandscapeLibrary
                         counterWater--;
                     }
 
-                    if (counterWater == 0)
-                    {
-                        continue;
-                    }
-
-                    if ((neighbours[i].getEntityType() is WaterSource) && (neighbours[i].getEntityType().CounterEntity >= counterWater))
+                    if (((neighbours[i].getEntityType() is WaterSource) && (neighbours[i].getEntityType().CounterEntity >= counterWater)) 
+                        || (counterWater == 0) || ((neighbours[i].getEntityType() is Cobblestone) && 
+                        (neighbours[i].getHeight() + ((double)(neighbours[i].getEntityType().CounterEntity) / 100) > neighbours[neighbours.Count - 1].getHeight())))
                     {
                         continue;
                     }
