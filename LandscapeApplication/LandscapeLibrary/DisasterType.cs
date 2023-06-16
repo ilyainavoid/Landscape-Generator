@@ -8,7 +8,6 @@ namespace LandscapeLibrary
     {
         CONFLAGRATION,
         METEOR_FALLING,
-        TORNADO,
-        FLOOD
+        TORNADO
     }
 }

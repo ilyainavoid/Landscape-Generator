@@ -20,9 +20,6 @@ namespace LandscapeLibrary
                 case DisasterType.METEOR_FALLING:
                     toReturn = new MeteorFalling();
                     break;
-                case DisasterType.FLOOD:
-                    toReturn = new Flood();
-                    break;
             }
             return toReturn;
         }

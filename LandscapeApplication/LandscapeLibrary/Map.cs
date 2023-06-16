@@ -17,9 +17,8 @@ namespace LandscapeLibrary
             this.createMap = FactoryMapCreator.getMapCreator(type);
             createMap.createMapHeight(this.matrixHeight);
             //matrixHeight[12, 12].setEntityType(FactoryEntity.getEntity(EntityType.WATER_SOURCE, PlantType.CACTUS));
-            matrixHeight[5, 12].setEntityType(FactoryEntity.getEntity(EntityType.FIRE, PlantType.CACTUS));
-            matrixHeight[8, 10].setEntityType(FactoryEntity.getEntity(EntityType.FIRE, PlantType.CACTUS));
-            matrixHeight[20, 15].setEntityType(FactoryEntity.getEntity(EntityType.FIRE, PlantType.CACTUS));
+            IDisaster disasterController = FactoryDisaster.getDisaster(DisasterType.CONFLAGRATION);
+            disasterController.startDisaster(50, 50, matrixHeight, 20);
 
             for (int i = 0; i < size; i++)
             {
