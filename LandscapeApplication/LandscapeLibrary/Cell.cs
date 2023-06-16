@@ -29,6 +29,7 @@ namespace LandscapeLibrary
             else if (this.height < 0.3)
             {
                 this.blockType = BlockFactoryType.getBlockType(BlockCreateType.BEACH);
+                this.entity = null;
 
                 if (rnd.NextDouble() > 0.83)
                 {
@@ -38,6 +39,7 @@ namespace LandscapeLibrary
             else if (this.height < 0.5)
             {
                 this.blockType = BlockFactoryType.getBlockType(BlockCreateType.FOREST);
+                this.entity = null;
 
                 if (rnd.NextDouble() > 0.3)
                 {
@@ -47,6 +49,7 @@ namespace LandscapeLibrary
             else if (this.height < 0.7)
             {
                 this.blockType = BlockFactoryType.getBlockType(BlockCreateType.JUNGLE);
+                this.entity = null;
 
                 if (rnd.NextDouble() > 0.2)
                 {
@@ -56,12 +59,29 @@ namespace LandscapeLibrary
             else if (this.height < 0.9)
             {
                 this.blockType = BlockFactoryType.getBlockType(BlockCreateType.SAVANNAH);
+                this.entity = null;
+
+                if (rnd.NextDouble() > 0.7)
+                {
+                    this.entity = FactoryEntity.getEntity(EntityType.PLANT, PlantType.ACACIA);
+                }
+            }
+            else
+            {
+                this.blockType = BlockFactoryType.getBlockType(BlockCreateType.TUNDRA);
+                this.entity = null;
+
+                if (rnd.NextDouble() > 0.9)
+                {
+                    this.entity = FactoryEntity.getEntity(EntityType.PLANT, PlantType.SPRUCE);
+                }
             }
         }
 
         public void setHeight(double height)
         {
             this.height = height;
+            this.CreateBlockTypeAndEntity();
         }
 
         public double getHeight()
