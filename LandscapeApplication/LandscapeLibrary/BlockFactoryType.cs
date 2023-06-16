@@ -6,7 +6,7 @@ namespace LandscapeLibrary
 {
     class BlockFactoryType
     {
-        static public BlockType getBlockType(BlockCreateType type)
+        public static BlockType getBlockType(BlockCreateType type)
         {
             BlockType toReturn = null;
             switch (type)
@@ -25,6 +25,9 @@ namespace LandscapeLibrary
                     break;
                 case BlockCreateType.FOREST:
                     toReturn = new Forest();
+                    break;
+                case BlockCreateType.WATER:
+                    toReturn = new WaterBlock();
                     break;
             }
             return toReturn;

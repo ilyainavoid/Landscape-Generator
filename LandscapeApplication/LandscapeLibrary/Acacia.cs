@@ -4,8 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    internal class FabricaCreateDisaster
+    class Acacia : Plant 
     {
-        public FabricaCreateDisaster { }
     }
 }

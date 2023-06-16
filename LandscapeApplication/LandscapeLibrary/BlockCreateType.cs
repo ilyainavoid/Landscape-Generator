@@ -11,6 +11,7 @@ namespace LandscapeLibrary
             JUNGLE,
             SAVANNAH,
             FOREST,
-            BEACH
+            BEACH,
+            WATER
         }
 }

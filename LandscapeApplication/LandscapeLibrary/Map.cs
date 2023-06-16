@@ -8,24 +8,58 @@ namespace LandscapeLibrary
     {
         private int size;
         private Cell[,] matrixHeight;
-        private CreateMap createMap;
+        private IMapCreator createMap;
 
-        public Map(int size, CreateMapType type)
+        public Map(int size, MapCreatorType type)
         {
             this.size = size;
             this.matrixHeight = new Cell[size, size];
+            this.createMap = FactoryMapCreator.getMapCreator(type);
+            createMap.createMapHeight(this.matrixHeight);
+            //matrixHeight[12, 12].setEntityType(FactoryEntity.getEntity(EntityType.WATER_SOURCE, PlantType.CACTUS));
+            IDisaster disasterController = FactoryDisaster.getDisaster(DisasterType.CONFLAGRATION);
+            disasterController.startDisaster(50, 50, matrixHeight, 20);
 
-            for (int i = 0; i < this.size; i++)
+            for (int i = 0; i < size; i++)
             {
-                for (int j = 0; j < this.size; j++)
+                for (int j = 0; j < size; j++)
                 {
-                    this.matrixHeight[i, j] = new Cell();
+                    List<Cell> neighbours = new List<Cell>();
+
+                    if (i - 1 >= 0)
+                    {
+                        neighbours.Add(matrixHeight[i - 1, j]);
+                    }
+                    if (j - 1 >= 0)
+                    {
+                        neighbours.Add(matrixHeight[i, j - 1]);
+                    }
+                    if (i + 1 < size)
+                    {
+                        neighbours.Add(matrixHeight[i + 1, j]);
+                    }
+                    if (j + 1 < size)
+                    {
+                        neighbours.Add(matrixHeight[i, j + 1]);
+                    }
+                    neighbours.Add(matrixHeight[i, j]);
+
+                    matrixHeight[i, j].setNeighboursCell(neighbours);
                 }
             }
-
-            FabricaCreateMap factory = new FabricaCreateMap();
-            this.createMap = factory.getCreateMap(type);
-            createMap.createMapHeight(this.matrixHeight);
+            for (int u = 0; u < 31; u++)
+            {
+                for (int i = 0; i < size; i++)
+                {
+                    for (int j = 0; j < size; j++)
+                    {
+                        if (matrixHeight[i, j].getEntityType() != null)
+                        {
+                            matrixHeight[i, j].getEntityType().moveEntity(matrixHeight[i, j].getNeighboursCell());
+                        }
+                    }
+                }
+            }
         }
 
         public Cell[,] getMap()
@@ -42,15 +76,51 @@ namespace LandscapeLibrary
                     //Console.Write(matrixHeight[i, j].getHeight() + " ");
                     if (matrixHeight[i, j].getHeight() < 0.2)
                     {
-                        Console.Write(0);
+                        //Console.Write(0);
+                        if(matrixHeight[i,j].getEntityType() is WaterSource)
+                        {
+                            Console.Write(matrixHeight[i,j].getEntityType().CounterEntity);
+                        }
+                        else if (matrixHeight[i, j].getEntityType() is Plant)
+                        {
+                            Console.Write("#");
+                        }
+                        else
+                        {
+                            Console.Write(0);
+                        }
                     }
                     else if (matrixHeight[i, j].getHeight() > 0.9)
                     {
-                        Console.Write(2);
+                        //Console.Write(2);
+                        if (matrixHeight[i, j].getEntityType() is WaterSource)
+                        {
+                            Console.Write(matrixHeight[i, j].getEntityType().CounterEntity);
+                        }
+                        else if (matrixHeight[i, j].getEntityType() is Plant)
+                        {
+                            Console.Write("#");
+                        }
+                        else
+                        {
+                            Console.Write(2);
+                        }
                     }
                     else
                     {
-                        Console.Write(1);
+                        //Console.Write(1);
+                        if (matrixHeight[i, j].getEntityType() is WaterSource)
+                        {
+                            Console.Write(matrixHeight[i, j].getEntityType().CounterEntity);
+                        }
+                        else if (matrixHeight[i, j].getEntityType() is Plant)
+                        {
+                            Console.Write("#");
+                        }
+                        else
+                        {
+                            Console.Write(1);
+                        }
                     }
                 }
                 Console.WriteLine();

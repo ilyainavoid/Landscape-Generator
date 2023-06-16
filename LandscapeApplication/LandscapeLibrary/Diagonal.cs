@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public class Diagonal : CreateMap
+    public class Diagonal : IMapCreator
     {
         public void createMapHeight(Cell[,] matrixHeight)
         {
@@ -17,9 +17,9 @@ namespace LandscapeLibrary
                 for (int j = 0; j < size; j++)
                 {
                     int distanceToCenter = Math.Abs(j - i);
-                    matrixHeight[i, j].setHeight(1 - (double)Math.Pow(distanceToCenter, 1.5) / maxDistance);
-
                     int sideY = size - i - 1;
+
+                    matrixHeight[i, j] = new Cell(1 - (double)Math.Pow(distanceToCenter, 1.5) / maxDistance);
                     distanceToCenter = Math.Abs(j - sideY);
                     double height = 1 - (double)Math.Pow(distanceToCenter, 1.5) / maxDistance;
                     if (matrixHeight[i,j].getHeight() < height)

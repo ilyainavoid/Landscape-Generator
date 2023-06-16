@@ -4,10 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public enum CreateDisasterType
+    class Spruce : Plant 
     {
-        CONFLAGRATION,
-        METEOR_FALLING,
-        TORNADO
     }
 }

@@ -4,8 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    abstract class BlockType
+    public abstract class BlockType
     {
-        
     }
 }
