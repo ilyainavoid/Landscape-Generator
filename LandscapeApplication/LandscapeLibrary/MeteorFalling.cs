@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    internal class Flood
+    public class MeteorFalling : IDisaster
     {
     }
 }

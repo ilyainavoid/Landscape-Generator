@@ -16,13 +16,15 @@ namespace LandscapeLibrary
 
         private void MovingEntity(Cell[,] cells)
         {
+            Random rnd = new Random();
             while (true)
             {
                 foreach (Cell cell in cells)
                 {
-                    cell.getEntity().moveEntity(cell.getNeighboursCell());
-                    Thread.Sleep(LocalRandom.random.Next(0, 60000));
+                    cell.getEntityType().moveEntity(cell.getNeighboursCell());
                 }
+
+                Thread.Sleep(rnd.Next(0, 60000));
             }
         }
 

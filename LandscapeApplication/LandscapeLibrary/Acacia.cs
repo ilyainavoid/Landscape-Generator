@@ -4,8 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public interface CreateMap
+    class Acacia : Plant 
     {
-        void createMapHeight(Cell[,] matrixHeight) { }
     }
 }

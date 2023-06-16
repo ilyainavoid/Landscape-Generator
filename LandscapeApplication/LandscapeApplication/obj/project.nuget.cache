@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P0IU6QS2cuENGlyaFKaBRj1WsFUOmzaGdfMA11I1Yxz5K7xpzwYwTuX+/2fg8onuuLq///mcp9d7iBxOmhp6DQ==",
+  "dgSpecHash": "6aqOwJKC+isXmdyNVdZmi7X9IOkzfPvEnHOSpP7wHERKth5pWpl9iTsvKQfWY/Zk0qShSfmRbJ6OYnmTnAnwDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\third\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\third\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\third\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\third\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

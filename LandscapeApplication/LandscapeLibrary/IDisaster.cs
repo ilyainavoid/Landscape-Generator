@@ -4,8 +4,8 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public interface CreateMap
+    public interface IDisaster
     {
-        void createMapHeight(Cell[,] matrixHeight) { }
+        void startDisaster(int x, int y, Cell[,] matrixHeight, int radius);
     }
 }

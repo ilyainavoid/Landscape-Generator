@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public enum CreateMapType
+    public enum MapCreatorType
     {
         DIAGONAL_CREATION,
         HILLS_AND_HOLES,

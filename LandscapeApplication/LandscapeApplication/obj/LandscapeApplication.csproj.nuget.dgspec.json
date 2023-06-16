@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj": {}
+    "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj": {
+    "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
+        "projectUniqueName": "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
         "projectName": "LandscapeApplication",
-        "projectPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
-        "packagesPath": "C:\\Users\\third\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeApplication\\obj\\",
+        "projectPath": "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\LandscapeApplication.csproj",
+        "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
+        "outputPath": "C:\\Landscape\\LandscapeApplication\\LandscapeApplication\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\third\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Юра\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
-                "projectPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj"
+              "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
+                "projectPath": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj"
               }
             }
           }
@@ -53,53 +49,30 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.32, 3.1.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
+    "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
+        "projectUniqueName": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
         "projectName": "LandscapeLibrary",
-        "projectPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
-        "packagesPath": "C:\\Users\\third\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeLibrary\\obj\\",
+        "projectPath": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj",
+        "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
+        "outputPath": "C:\\Landscape\\LandscapeApplication\\LandscapeLibrary\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\third\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Юра\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -130,31 +103,16 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
         }
       }
     }
