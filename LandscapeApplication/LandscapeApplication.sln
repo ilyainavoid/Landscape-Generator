@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandscapeApplication", "Lan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandscapeLibrary", "LandscapeLibrary\LandscapeLibrary.csproj", "{16211323-0605-4B98-B75A-A98D13B600D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{537EC03D-02AB-421C-A320-0E2B1F7D9CEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandscapeApplicationUI", "WinFormsApp1\LandscapeApplicationUI.csproj", "{CD36AA6E-4C5B-4949-AF23-D8BB31691666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{16211323-0605-4B98-B75A-A98D13B600D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16211323-0605-4B98-B75A-A98D13B600D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16211323-0605-4B98-B75A-A98D13B600D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{537EC03D-02AB-421C-A320-0E2B1F7D9CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{537EC03D-02AB-421C-A320-0E2B1F7D9CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{537EC03D-02AB-421C-A320-0E2B1F7D9CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{537EC03D-02AB-421C-A320-0E2B1F7D9CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD36AA6E-4C5B-4949-AF23-D8BB31691666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD36AA6E-4C5B-4949-AF23-D8BB31691666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD36AA6E-4C5B-4949-AF23-D8BB31691666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD36AA6E-4C5B-4949-AF23-D8BB31691666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

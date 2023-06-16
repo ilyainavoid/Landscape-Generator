@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kqgECtWSEb+F9e0NdFInKTFzDAOio7LRBsMp3akt6Zon6HFV+1jHeK5ayn+J4UD8brh8aqzOvMy8v8PxViwBDQ==",
+  "dgSpecHash": "/iUILFIefCP825/bGpMdZhzv2l+Sxy5mAvVDD6q7HUKzzxtukYwfKJy7t7RMXC8fe0VJ3wPGbVSugwAzupa1kA==",
   "success": true,
-  "projectFilePath": "C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\LandscapeApplicationUI.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

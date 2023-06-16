@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -23,31 +23,30 @@ namespace LandscapeLibrary
             Random rnd = new Random();
             if (this.height < 0.2)
             {
-                this.blockType = BlockFabricaType.getBlockType(BlockCreateType.WATER);
+                this.blockType = BlockFactoryType.getBlockType(BlockCreateType.WATER);
                 this.entity = FactoryEntity.getEntity(EntityType.WATER_SOURCE, PlantType.CACTUS);
-                this.entity.AgeEntity = true;
             }
             else if (this.height < 0.3)
             {
-                this.blockType = BlockFabricaType.getBlockType(BlockCreateType.BEACH);
+                this.blockType = BlockFactoryType.getBlockType(BlockCreateType.BEACH);
 
                 if (rnd.NextDouble() > 0.83)
                 {
                     this.entity = FactoryEntity.getEntity(EntityType.PLANT, PlantType.CACTUS);
                 }
             }
-            else if(this.height < 0.5)
+            else if (this.height < 0.5)
             {
-                this.blockType = BlockFabricaType.getBlockType(BlockCreateType.FOREST);
+                this.blockType = BlockFactoryType.getBlockType(BlockCreateType.FOREST);
 
                 if (rnd.NextDouble() > 0.3)
                 {
                     this.entity = FactoryEntity.getEntity(EntityType.PLANT, PlantType.OAK);
                 }
             }
-            else if(this.height < 0.7)
+            else if (this.height < 0.7)
             {
-                this.blockType = BlockFabricaType.getBlockType(BlockCreateType.JUNGLE);
+                this.blockType = BlockFactoryType.getBlockType(BlockCreateType.JUNGLE);
 
                 if (rnd.NextDouble() > 0.2)
                 {
@@ -56,21 +55,7 @@ namespace LandscapeLibrary
             }
             else if (this.height < 0.9)
             {
-                this.blockType = BlockFabricaType.getBlockType(BlockCreateType.SAVANNAH);
-
-                if (rnd.NextDouble() > 0.6)
-                {
-                    this.entity = FactoryEntity.getEntity(EntityType.PLANT, PlantType.ACACIA);
-                }
-            }
-            else
-            {
-                this.blockType = BlockFabricaType.getBlockType(BlockCreateType.TUNDRA);
-
-                if (rnd.NextDouble() > 0.7)
-                {
-                    this.entity = FactoryEntity.getEntity(EntityType.PLANT, PlantType.SPRUCE);
-                }
+                this.blockType = BlockFactoryType.getBlockType(BlockCreateType.SAVANNAH);
             }
         }
 
@@ -99,24 +84,15 @@ namespace LandscapeLibrary
             this.entity = entity;
         }
 
-        /*public int getCounterEntity()
-        {
-            return this.counterEntity;
-        }
-
-        public void setCounterEntity(int counterEntity)
-        {
-            this.counterEntity = counterEntity;
-        }*/
-
         public List<Cell> getNeighboursCell()
         {
             return this.neighbours;
         }
 
-        public void setNeighboursCell(List<Cell> neighbours) 
+        public void setNeighboursCell(List<Cell> neighbours)
         {
             this.neighbours = neighbours;
         }
+
     }
 }

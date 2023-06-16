@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\WinFormsApp1.csproj",
-      "projectName": "WinFormsApp1",
-      "projectPath": "C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\LandscapeApplicationUI.csproj",
+      "projectName": "LandscapeApplicationUI",
+      "projectPath": "C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\LandscapeApplicationUI.csproj",
       "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
       "outputPath": "C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
@@ -58,5 +58,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша C:\\Landscape\\LandscapeApplication\\WinFormsApp1\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
