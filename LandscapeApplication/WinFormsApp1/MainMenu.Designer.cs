@@ -314,7 +314,7 @@
             DeleteMapButton.TabIndex = 3;
             DeleteMapButton.Text = "Delete Map";
             DeleteMapButton.UseVisualStyleBackColor = false;
-            DeleteMapButton.Click += DeleteMapButton_click;
+            //DeleteMapButton.Click += DeleteMapButton_click;
             // 
             // GenerateMapButton
             // 

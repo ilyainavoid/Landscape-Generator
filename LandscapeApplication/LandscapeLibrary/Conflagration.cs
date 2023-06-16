@@ -4,10 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    public enum CreateDisasterType
+    internal class Flood
     {
-        CONFLAGRATION,
-        METEOR_FALLING,
-        TORNADO
     }
 }
