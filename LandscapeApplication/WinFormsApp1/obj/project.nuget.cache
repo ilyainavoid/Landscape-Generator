@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ogFLlWxb35k8TgYkm5PcsoFPa0YLH4pBaOusISZObrMkQqRCLOlF3P1QnDWf+z/zk9EmZSPVm2SzsRQZXZ7PdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\WinFormsApp1\\LandscapeApplicationUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\third\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.4\\guna.ui2.winforms.2.0.4.4.nupkg.sha512",
+    "C:\\Users\\third\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\third\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
