@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Fire : Entity
+    public class Fire : Entity
     {
         bool ageEntity = false;
         int fireCounter = 5;
@@ -21,18 +21,28 @@ namespace LandscapeLibrary
             }
             else
             {
-                for (int i = 0; i < neighbours.Count - 1; i++)
+                if (neighbours[neighbours.Count - 1].getBlock() is WaterBlock)
                 {
-                    if (neighbours[i].getEntityType() is Plant)
+                    neighbours[neighbours.Count - 1].setEntityType(FactoryEntity.getEntity(EntityType.WATER_SOURCE, PlantType.OAK));
+                }
+                else
+                {
+                    for (int i = 0; i < neighbours.Count - 1; i++)
                     {
-                        if (rnd.NextDouble() >= 0.8)
+                        if (neighbours[i].getEntityType() is Plant)
                         {
-                            neighbours[i].setEntityType(FactoryEntity.getEntity(EntityType.FIRE, PlantType.ACACIA));
+                            if (rnd.NextDouble() >= 0.8)
+                            {
+                                neighbours[i].setEntityType(FactoryEntity.getEntity(EntityType.FIRE, PlantType.ACACIA));
+                            }
                         }
                     }
-                }
 
-                fireCounter--;
+                    fireCounter--;
+                    if (fireCounter == 0) {
+                        neighbours[neighbours.Count - 1].setEntityType(null);
+                    }
+                }
             }
         }
     }

@@ -21,6 +21,7 @@ namespace LandscapeLibrary
         private void CreateBlockTypeAndEntity()
         {
             Random rnd = new Random();
+
             if (this.height < 0.2)
             {
                 this.blockType = BlockFactoryType.getBlockType(BlockCreateType.WATER);

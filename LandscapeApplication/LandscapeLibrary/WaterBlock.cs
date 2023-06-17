@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class WaterBlock : BlockType
+    public class WaterBlock : BlockType
     {
     }
 }

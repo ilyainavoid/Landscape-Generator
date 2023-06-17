@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Spruce : Plant 
+    public class Spruce : Plant 
     {
     }
 }

@@ -20,3 +20,5 @@ C:\Users\third\Desktop\OOP\OOP-OOP-2023-OOP2023Team17\LandscapeApplication\WinFo
 C:\Users\third\Desktop\OOP\OOP-OOP-2023-OOP2023Team17\LandscapeApplication\WinFormsApp1\bin\Debug\net6.0-windows\System.Management.dll
 C:\Users\third\Desktop\OOP\OOP-OOP-2023-OOP2023Team17\LandscapeApplication\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
 C:\Users\third\Desktop\OOP\OOP-OOP-2023-OOP2023Team17\LandscapeApplication\WinFormsApp1\obj\Debug\net6.0-windows\LandscapeApplicationUI.csproj.CopyComplete
+C:\Users\third\Desktop\OOP\OOP-OOP-2023-OOP2023Team17\LandscapeApplication\WinFormsApp1\bin\Debug\net6.0-windows\LandscapeLibrary.dll
+C:\Users\third\Desktop\OOP\OOP-OOP-2023-OOP2023Team17\LandscapeApplication\WinFormsApp1\bin\Debug\net6.0-windows\LandscapeLibrary.pdb

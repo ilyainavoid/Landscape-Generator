@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Savannah: BlockType
+    public class Savannah: BlockType
     {
 
     }

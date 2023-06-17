@@ -6,7 +6,7 @@ using System.Threading;
 namespace LandscapeLibrary
 {
 
-     class LifeMapControler
+    public class LifeMapControler
     {
         public void StartMovingEntity(Cell[,] cells)
         {
@@ -19,12 +19,35 @@ namespace LandscapeLibrary
             Random rnd = new Random();
             while (true)
             {
-                foreach (Cell cell in cells)
+                IDisaster disaster;
+
+                if (rnd.NextDouble() > 0.999)
                 {
-                    cell.getEntityType().moveEntity(cell.getNeighboursCell());
+                    disaster = FactoryDisaster.getDisaster(DisasterType.METEOR_FALLING);
+                    disaster.startDisaster(rnd.Next(cells.GetLength(0)), rnd.Next(cells.GetLength(0)), cells, rnd.Next(5));
                 }
 
-                Thread.Sleep(rnd.Next(0, 60000));
+                if (rnd.NextDouble() > 0.99)
+                {
+                    disaster = FactoryDisaster.getDisaster(DisasterType.TORNADO);
+                    disaster.startDisaster(rnd.Next(cells.GetLength(0)), rnd.Next(cells.GetLength(0)), cells, rnd.Next(10));
+                }
+
+                if (rnd.NextDouble() > 0.99)
+                {
+                    disaster = FactoryDisaster.getDisaster(DisasterType.CONFLAGRATION);
+                    disaster.startDisaster(rnd.Next(cells.GetLength(0)), rnd.Next(cells.GetLength(0)), cells, rnd.Next(15));
+                }
+
+                foreach (Cell cell in cells)
+                {
+                    if (cell.getEntityType() != null) 
+                    {
+                        cell.getEntityType().moveEntity(cell.getNeighboursCell());
+                    }
+                }
+
+                Thread.Sleep(2000);
             }
         }
 

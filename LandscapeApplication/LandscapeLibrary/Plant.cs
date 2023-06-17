@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    abstract class Plant : Entity
+    public abstract class Plant : Entity
     {
         bool ageEntity = true;
         int plantCounter;

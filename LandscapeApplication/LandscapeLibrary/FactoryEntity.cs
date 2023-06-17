@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class FactoryEntity
+    public class FactoryEntity
     {
         public static Entity getEntity(EntityType type, PlantType plantType)
         {

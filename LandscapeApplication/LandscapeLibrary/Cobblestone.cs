@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Cobblestone : Entity
+    public class Cobblestone : Entity
     {
         bool ageEntity = true;
         int cobblestoneCounter = 20;

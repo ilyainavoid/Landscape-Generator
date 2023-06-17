@@ -31,6 +31,7 @@
             panel1 = new Panel();
             panel5 = new Panel();
             panel3 = new Panel();
+            Refresh = new Button();
             CloseAppButton = new Button();
             AddAcaciaButton = new Button();
             AddOakButton = new Button();
@@ -44,10 +45,9 @@
             label3 = new Label();
             StartTornado = new Button();
             StartConflagration = new Button();
-            StartFlood = new Button();
+            MeteorFalling = new Button();
             CreationTypeChoice = new CheckedListBox();
             CreationTypeLabel = new Label();
-            DeleteMapButton = new Button();
             GenerateMapButton = new Button();
             panel4 = new Panel();
             textBox1 = new TextBox();
@@ -86,6 +86,7 @@
             // panel3
             // 
             panel3.BackColor = Color.OliveDrab;
+            panel3.Controls.Add(Refresh);
             panel3.Controls.Add(CloseAppButton);
             panel3.Controls.Add(AddAcaciaButton);
             panel3.Controls.Add(AddOakButton);
@@ -99,10 +100,9 @@
             panel3.Controls.Add(label3);
             panel3.Controls.Add(StartTornado);
             panel3.Controls.Add(StartConflagration);
-            panel3.Controls.Add(StartFlood);
+            panel3.Controls.Add(MeteorFalling);
             panel3.Controls.Add(CreationTypeChoice);
             panel3.Controls.Add(CreationTypeLabel);
-            panel3.Controls.Add(DeleteMapButton);
             panel3.Controls.Add(GenerateMapButton);
             panel3.Controls.Add(panel4);
             panel3.Controls.Add(MapSizeLabel);
@@ -112,14 +112,27 @@
             panel3.TabIndex = 3;
             panel3.Paint += panel3_Paint;
             // 
+            // Refresh
+            // 
+            Refresh.BackColor = Color.LemonChiffon;
+            Refresh.Font = new Font("Bebas Neue", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            Refresh.ForeColor = SystemColors.ControlText;
+            Refresh.Location = new Point(249, 378);
+            Refresh.Name = "Refresh";
+            Refresh.Size = new Size(283, 50);
+            Refresh.TabIndex = 28;
+            Refresh.Text = "Refresh";
+            Refresh.UseVisualStyleBackColor = false;
+            Refresh.Click += StartLife_Click;
+            // 
             // CloseAppButton
             // 
             CloseAppButton.BackColor = Color.LemonChiffon;
             CloseAppButton.Font = new Font("Bebas Neue", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             CloseAppButton.ForeColor = SystemColors.ControlText;
-            CloseAppButton.Location = new Point(136, 732);
+            CloseAppButton.Location = new Point(16, 730);
             CloseAppButton.Name = "CloseAppButton";
-            CloseAppButton.Size = new Size(252, 50);
+            CloseAppButton.Size = new Size(516, 50);
             CloseAppButton.TabIndex = 26;
             CloseAppButton.Text = "Close app";
             CloseAppButton.UseVisualStyleBackColor = false;
@@ -136,6 +149,7 @@
             AddAcaciaButton.TabIndex = 25;
             AddAcaciaButton.Text = "Acacia";
             AddAcaciaButton.UseVisualStyleBackColor = false;
+            AddAcaciaButton.Click += AddAcaciaButton_Click;
             // 
             // AddOakButton
             // 
@@ -148,6 +162,7 @@
             AddOakButton.TabIndex = 24;
             AddOakButton.Text = "Oak";
             AddOakButton.UseVisualStyleBackColor = false;
+            AddOakButton.Click += AddOakButton_Click;
             // 
             // AddJungleTreeButton
             // 
@@ -160,6 +175,7 @@
             AddJungleTreeButton.TabIndex = 23;
             AddJungleTreeButton.Text = "Jungle tree";
             AddJungleTreeButton.UseVisualStyleBackColor = false;
+            AddJungleTreeButton.Click += AddJungleTreeButton_Click;
             // 
             // AddSpruceButton
             // 
@@ -172,6 +188,7 @@
             AddSpruceButton.TabIndex = 22;
             AddSpruceButton.Text = "Spruce";
             AddSpruceButton.UseVisualStyleBackColor = false;
+            AddSpruceButton.Click += AddSpruceButton_Click;
             // 
             // AddCactusButton
             // 
@@ -197,6 +214,7 @@
             AddCobblestoneButton.TabIndex = 20;
             AddCobblestoneButton.Text = "Cobblestone";
             AddCobblestoneButton.UseVisualStyleBackColor = false;
+            AddCobblestoneButton.Click += AddCobblestoneButton_Click;
             // 
             // AddFireButton
             // 
@@ -209,6 +227,7 @@
             AddFireButton.TabIndex = 19;
             AddFireButton.Text = "Fire";
             AddFireButton.UseVisualStyleBackColor = false;
+            AddFireButton.Click += AddFireButton_Click;
             // 
             // AddWaterButton
             // 
@@ -221,6 +240,7 @@
             AddWaterButton.TabIndex = 18;
             AddWaterButton.Text = "Water";
             AddWaterButton.UseVisualStyleBackColor = false;
+            AddWaterButton.Click += AddWaterButton_Click;
             // 
             // label4
             // 
@@ -256,6 +276,7 @@
             StartTornado.TabIndex = 15;
             StartTornado.Text = "Tornado";
             StartTornado.UseVisualStyleBackColor = false;
+            StartTornado.Click += StartTornado_Click;
             // 
             // StartConflagration
             // 
@@ -268,18 +289,20 @@
             StartConflagration.TabIndex = 14;
             StartConflagration.Text = "Conflagration";
             StartConflagration.UseVisualStyleBackColor = false;
+            StartConflagration.Click += StartConflagration_Click;
             // 
-            // StartFlood
+            // MeteorFalling
             // 
-            StartFlood.BackColor = Color.LemonChiffon;
-            StartFlood.Font = new Font("Bebas Neue", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            StartFlood.ForeColor = SystemColors.ControlText;
-            StartFlood.Location = new Point(15, 481);
-            StartFlood.Name = "StartFlood";
-            StartFlood.Size = new Size(170, 50);
-            StartFlood.TabIndex = 13;
-            StartFlood.Text = "Flood";
-            StartFlood.UseVisualStyleBackColor = false;
+            MeteorFalling.BackColor = Color.LemonChiffon;
+            MeteorFalling.Font = new Font("Bebas Neue", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            MeteorFalling.ForeColor = SystemColors.ControlText;
+            MeteorFalling.Location = new Point(15, 481);
+            MeteorFalling.Name = "MeteorFalling";
+            MeteorFalling.Size = new Size(170, 50);
+            MeteorFalling.TabIndex = 13;
+            MeteorFalling.Text = "Meteor";
+            MeteorFalling.UseVisualStyleBackColor = false;
+            MeteorFalling.Click += MeteorFalling_Click;
             // 
             // CreationTypeChoice
             // 
@@ -304,18 +327,6 @@
             CreationTypeLabel.Text = "Choose creation type";
             CreationTypeLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // DeleteMapButton
-            // 
-            DeleteMapButton.BackColor = Color.LemonChiffon;
-            DeleteMapButton.Font = new Font("Bebas Neue", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
-            DeleteMapButton.Location = new Point(281, 378);
-            DeleteMapButton.Name = "DeleteMapButton";
-            DeleteMapButton.Size = new Size(254, 50);
-            DeleteMapButton.TabIndex = 3;
-            DeleteMapButton.Text = "Delete Map";
-            DeleteMapButton.UseVisualStyleBackColor = false;
-            //DeleteMapButton.Click += DeleteMapButton_click;
-            // 
             // GenerateMapButton
             // 
             GenerateMapButton.BackColor = Color.LemonChiffon;
@@ -323,9 +334,9 @@
             GenerateMapButton.ForeColor = SystemColors.ControlText;
             GenerateMapButton.Location = new Point(16, 378);
             GenerateMapButton.Name = "GenerateMapButton";
-            GenerateMapButton.Size = new Size(252, 50);
+            GenerateMapButton.Size = new Size(227, 50);
             GenerateMapButton.TabIndex = 2;
-            GenerateMapButton.Text = "Generate Map";
+            GenerateMapButton.Text = "Generate";
             GenerateMapButton.UseVisualStyleBackColor = false;
             GenerateMapButton.Click += CreateMapButton_Click;
             // 
@@ -434,10 +445,9 @@
         private Panel panel4;
         private TextBox textBox1;
         private Button GenerateMapButton;
-        private Button DeleteMapButton;
         private Label CreationTypeLabel;
         private CheckedListBox CreationTypeChoice;
-        private Button StartFlood;
+        private Button MeteorFalling;
         private Label label3;
         private Button StartTornado;
         private Button StartConflagration;
@@ -452,5 +462,7 @@
         private Button AddFireButton;
         private Button CloseAppButton;
         private Panel panel5;
+        private Button StopLife;
+        private Button Refresh;
     }
 }

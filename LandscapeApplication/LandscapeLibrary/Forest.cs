@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Forest: BlockType
+    public class Forest: BlockType
     {
 
     }

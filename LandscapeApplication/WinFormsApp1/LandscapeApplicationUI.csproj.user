@@ -4,10 +4,6 @@
     <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
   <ItemGroup>
-	  <Compile Update="Form1.cs">
-	  </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Update="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -57,6 +57,16 @@
             "rid": "win"
           }
         }
+      },
+      "LandscapeLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LandscapeLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LandscapeLibrary.dll": {}
+        }
       }
     }
   },
@@ -133,11 +143,17 @@
         "system.management.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "LandscapeLibrary/1.0.0": {
+      "type": "project",
+      "path": "../LandscapeLibrary/LandscapeLibrary.csproj",
+      "msbuildProject": "../LandscapeLibrary/LandscapeLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Guna.UI2.WinForms >= 2.0.4.4"
+      "Guna.UI2.WinForms >= 2.0.4.4",
+      "LandscapeLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -171,7 +187,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj": {
+              "projectPath": "C:\\Users\\third\\Desktop\\OOP\\OOP-OOP-2023-OOP2023Team17\\LandscapeApplication\\LandscapeLibrary\\LandscapeLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

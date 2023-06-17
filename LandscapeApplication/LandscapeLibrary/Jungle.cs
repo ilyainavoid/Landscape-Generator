@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Jungle: BlockType
+    public class Jungle: BlockType
     {
 
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class Tundra: BlockType
+    public class Tundra: BlockType
     {
 
     }

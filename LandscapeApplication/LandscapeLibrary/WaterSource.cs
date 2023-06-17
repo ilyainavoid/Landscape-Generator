@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LandscapeLibrary
 {
-    class WaterSource : Entity
+    public class WaterSource : Entity
     {
         bool ageEntity = false;
         int waterCounter = 9;
