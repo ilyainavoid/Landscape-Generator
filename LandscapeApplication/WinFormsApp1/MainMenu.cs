@@ -35,86 +35,73 @@ namespace WinFormsApp1
 
         private void Drawer(int gridSize)
         {
-            while (Map.Controls.Count > 0)
-            {
-                Map.Controls[0].Dispose();
-            }
+            Map.Controls.Clear();
 
-            for (int i = 0; i < gridSize; ++i)
+            Dictionary<Type, Color> blockColors = new Dictionary<Type, Color>
+            {
+                { typeof(WaterBlock), Color.DarkBlue },
+                { typeof(Beach), Color.Beige },
+                { typeof(Forest), Color.LightGreen },
+                { typeof(Jungle), Color.DarkOliveGreen },
+                { typeof(Savannah), Color.YellowGreen },
+                { typeof(Tundra), Color.White }
+            };
+
+            Dictionary<Type, Color> entityColors = new Dictionary<Type, Color>
+            {
+                { typeof(Oak), Color.Green },
+                { typeof(Cactus), Color.Pink },
+                { typeof(Acacia), Color.Orange },
+                { typeof(JungleTree), Color.DarkGreen },
+                { typeof(Cobblestone), Color.Gray },
+                { typeof(Spruce), Color.DarkTurquoise },
+                { typeof(Fire), Color.Red },
+                { typeof(WaterSource), Color.DarkBlue }
+            };
+
+            Panel[,] displayedCells = new Panel[gridSize, gridSize];
+            Panel[,] displayedEntities = new Panel[gridSize, gridSize];
+
+            Parallel.For(0, gridSize, i =>
             {
                 for (int j = 0; j < gridSize; ++j)
                 {
-                    displayedCells[i, j] = new Panel();
-                    displayedEntities[i, j] = new Panel();
-                    displayedCells[i, j].Margin = new System.Windows.Forms.Padding(0);
-                    displayedEntities[i, j].Width = 10;
-                    displayedEntities[i, j].Height = 10;
-                    displayedCells[i, j].Click += new EventHandler(CellSelect);
+                    Panel displayedCell = displayedCells[i, j];
 
-                    if (matrix[i, j].getBlock() is WaterBlock)
+                    if (displayedCell == null)
                     {
-                        displayedCells[i, j].BackColor = Color.DarkBlue;
-                    }
-                    else if (matrix[i, j].getBlock() is Beach)
-                    {
-                        displayedCells[i, j].BackColor = Color.Beige;
-                    }
-                    else if (matrix[i, j].getBlock() is Forest)
-                    {
-                        displayedCells[i, j].BackColor = Color.LightGreen;
-                    }
-                    else if (matrix[i, j].getBlock() is Jungle)
-                    {
-                        displayedCells[i, j].BackColor = Color.DarkOliveGreen;
-                    }
-                    else if (matrix[i, j].getBlock() is Savannah)
-                    {
-                        displayedCells[i, j].BackColor = Color.YellowGreen;
-                    }
-                    else if (matrix[i, j].getBlock() is Tundra)
-                    {
-                        displayedCells[i, j].BackColor = Color.White;
+                        displayedCell = new Panel();
+                        displayedCell.Margin = new Padding(0);
+                        displayedCell.Click += CellSelect;
+                        displayedCells[i, j] = displayedCell;
                     }
 
+                    Type blockType = matrix[i, j].getBlock().GetType();
+                    if (blockColors.TryGetValue(blockType, out Color blockColor))
+                    {
+                        displayedCell.BackColor = blockColor;
+                    }
 
+                    Type entityType = matrix[i, j].getEntityType()?.GetType();
+                    if (entityType != null && entityColors.TryGetValue(entityType, out Color entityColor))
+                    {
+                        Panel displayedEntity = displayedEntities[i, j];
+                        if (displayedEntity == null)
+                        {
+                            displayedEntity = new Panel();
+                            displayedEntity.Width = 10;
+                            displayedEntity.Height = 10;
+                            displayedEntities[i, j] = displayedEntity;
+                        }
+                        displayedEntity.BackColor = entityColor;
+                        displayedCell.Controls.Add(displayedEntity);
+                    }
 
-                    if (matrix[i, j].getEntityType() is Oak)
-                    {
-                        displayedEntities[i, j].BackColor = Color.Green;
-
-                    }
-                    else if (matrix[i, j].getEntityType() is Cactus)
-                    {
-                        displayedEntities[i, j].BackColor = Color.Pink;
-                    }
-                    else if (matrix[i, j].getEntityType() is Acacia)
-                    {
-                        displayedEntities[i, j].BackColor = Color.Orange;
-                    }
-                    else if (matrix[i, j].getEntityType() is JungleTree)
-                    {
-                        displayedEntities[i, j].BackColor = Color.DarkGreen;
-                    }
-                    else if (matrix[i, j].getEntityType() is Cobblestone)
-                    {
-                        displayedEntities[i, j].BackColor = Color.Gray;
-                    }
-                    else if (matrix[i, j].getEntityType() is Spruce)
-                    {
-                        displayedEntities[i, j].BackColor = Color.DarkTurquoise;
-                    }
-                    else if (matrix[i, j].getEntityType() is Fire)
-                    {
-                        displayedEntities[i, j].BackColor = Color.Red;
-                    }
-                    else if (matrix[i, j].getEntityType() is WaterSource)
-                    {
-                        displayedEntities[i, j].BackColor = Color.DarkBlue;
-                    }
-                    displayedCells[i, j].Controls.Add(displayedEntities[i, j]);
-                    Map.Controls.Add(displayedCells[i, j], i, j);
+                    int rowIndex = i;
+                    int columnIndex = j;
+                    Map.Invoke(new MethodInvoker(() => Map.Controls.Add(displayedCell, rowIndex, columnIndex)));
                 }
-            }
+            });
         }
 
         private void CellSelect(object sender, EventArgs e)
@@ -208,21 +195,11 @@ namespace WinFormsApp1
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void MainMenuLoad(object sender, EventArgs e)
         {
-         /*   this.TopMost = true;
+            this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;*/
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void MapControllerLabel_Click(object sender, EventArgs e)
@@ -482,5 +459,6 @@ namespace WinFormsApp1
             isJungleTree = false;
             isCactus = false;
         }
+
     }
 }
